@@ -7,10 +7,10 @@ for (let i =0 ; i < navy.length; i++) {
         console.log("event is listening " + i);
 
         if (i % 2 == 0) {
-            event.target.style.backgroundColor = "red";
+            event.target.style.backgroundColor = "green";
             console.log("The grass is green")
         } else {
-            event.target.style.backgroundColor = "pink";
+            event.target.style.backgroundColor = "orange";
             console.log("Does this work with colors")
 
         }
@@ -66,7 +66,7 @@ for(let i= 0; i<destinationList.length;i++){
 
     destinationList[2].addEventListener("mouseover",function(event){
 
-        event.target.style.fontStyle='normal';
+        event.target.style.fontStyle='oblique';
     });
 
 }
