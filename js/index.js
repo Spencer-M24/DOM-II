@@ -16,8 +16,9 @@ for (let i =0 ; i < navy.length; i++) {
         }
 
     }, true);
-
-
+    
+    
+    
     navy[i].addEventListener("click", function (event) {
 
         event.preventDefault();
@@ -25,22 +26,33 @@ for (let i =0 ; i < navy.length; i++) {
     });
 
 }
+
+
+// Clicking events
 document.addEventListener("click", function (event) {
 
     event.stopPropagation();
     console.log("Once  this has clicked everything yeilds");
 })
 
-    const para =document.querySelector(".intro p");
-    para.addEventListener("dblclick",function(event){
+
+
+
+const pgrap = document.querySelector(".intro p");
+    pgrap.addEventListener("dblclick",function(event){
     event.target.style.fontSize="13px";
      console.log("I want you to be big!!");
 });
+
+
 
     window.addEventListener("resize", function(event) {
     console.log("resized");
 });
 
+
+
+// Had fun with this INTRO Header Section
 const heading =document.querySelector(".nav-container .logo-heading");
 
 heading.addEventListener("click", function(event){
@@ -72,6 +84,8 @@ for(let i= 0; i<destinationList.length;i++){
 }
 
 
+// Font Size
+
 let fontSize=16;
 const btnList= document.querySelectorAll(".btn");
 
@@ -93,6 +107,7 @@ for (let i=0; i < btnList.length; i++) {
     });
 }
 
+// Contents Places
 const contentPara =document.querySelector(".content-section .text-content p");
 contentPara.addEventListener("copy",function(event){
     console.log("This Paragraph is copied.");
@@ -107,6 +122,10 @@ destPara.addEventListener("paste",function(event){
         console.log("Paragraph Just Been Pasted Warning.");
 });
 
+
+
+
+// This is the console, what this does it show keys your press along with how how many times. To my understanding
 
 
 document.addEventListener('keydown', (event) => {
