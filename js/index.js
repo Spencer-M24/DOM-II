@@ -66,7 +66,7 @@ for(let i= 0; i<destinationList.length;i++){
 
     destinationList[2].addEventListener("mouseover",function(event){
 
-        event.target.style.fontStyle='oblique';
+        event.target.style.fontStyle='italic';
     });
 
 }
